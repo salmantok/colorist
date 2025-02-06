@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Colorist</title>
+        <meta name="author" content="Salman" />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#000000" />
+
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="Colorist" />
+        <meta
+            name="description"
+            content="Colorist adalah alat pemilih warna berbasis HTML5 yang memungkinkan pengguna memilih warna dari canvas lingkaran dengan visualisasi dalam berbagai format: HEX, RGB, RGBA, HSL, dan HSLA."
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://salmantok.github.io/colorist/"
+        />
+        <meta property="og:title" content="Colorist" />
+        <meta
+            property="og:description"
+            content="Colorist adalah alat pemilih warna berbasis HTML5 yang memungkinkan pengguna memilih warna dari canvas lingkaran dengan visualisasi dalam berbagai format: HEX, RGB, RGBA, HSL, dan HSLA."
+        />
+        <meta
+            property="og:image"
+            content="https://raw.githubusercontent.com/salmantok/colorist/master/media/colorist-logo.png"
+        />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+            property="twitter:url"
+            content="https://salmantok.github.io/colorist/"
+        />
+        <meta property="twitter:title" content="Colorist" />
+        <meta
+            property="twitter:description"
+            content="Colorist adalah alat pemilih warna berbasis HTML5 yang memungkinkan pengguna memilih warna dari canvas lingkaran dengan visualisasi dalam berbagai format: HEX, RGB, RGBA, HSL, dan HSLA."
+        />
+        <meta
+            property="twitter:image"
+            content="https://raw.githubusercontent.com/salmantok/colorist/master/media/colorist-logo.png"
+        />
+
+        <!-- Favicon -->
+        <link
+            rel="shortcut icon"
+            href="https://raw.githubusercontent.com/salmantok/colorist/master/media/colorist-logo.png"
+            type="image/x-icon"
+        />
+
+        <!-- Styles dan Scripts -->
+        <link rel="stylesheet" href="css/index.css" />
+        <script defer src="js/index.js"></script>
+    </head>
+    <body>
+        <main>
+            <h2>Pilih Warna</h2>
+            <select id="formatSelect" onchange="updateColor()">
+                <option value="hex">HEX</option>
+                <option value="rgb">RGB</option>
+                <option value="rgba">RGBA</option>
+                <option value="hsl">HSL</option>
+                <option value="hsla">HSLA</option>
+            </select>
+            <br />
+            <div class="color-container">
+                <canvas id="colorCanvas" width="300" height="300"></canvas>
+                <div id="pointer"></div>
+            </div>
+
+            <h3>Hasil Warna</h3>
+            <div id="colorPreview"></div>
+            <div class="result">
+                <span id="colorValue">-</span>
+            </div>
+        </main>
+        <footer>
+            <p>
+                &copy; <span id="year"></span>
+                <a href="https://github.com/salmantok/colorist.git">Colorist</a
+                >, maintained by
+                <a href="https://github.com/salmantok" target="_blank">Salman</a
+                >.
+            </p>
+        </footer>
+    </body>
+</html>
